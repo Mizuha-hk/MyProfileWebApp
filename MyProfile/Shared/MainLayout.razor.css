@@ -76,13 +76,15 @@ main {
 
 .header-button {
     display: inline;
-    padding: 0.9rem 5%;
+    padding: 0.7rem 5%;
     margin: 0 0;
     border: 1px solid #aaaaaa;
     border-top: 0;
     border-left: 0;
     border-image: linear-gradient(75deg, #f1f1f1, #888888);
     border-image-slice: 1;
+    font-family: Segoe UI;
+    font-size: 20px;
     cursor: pointer;
     user-select: none;
 
@@ -96,5 +98,38 @@ main {
 }
 
 .header-button:hover {
+    background-position: 0 0;
+}
+
+.header-logo {
+    display: inline;
+    padding: 0.6rem 1%;
+    margin: 0 0 0 0;
+    border-right: 1px solid #888888;
+    font-family: 'Segoe UI Black';
+    font-size: 25px;
+    user-select: none;
+    min-width: 170px;
+}
+
+.header-button-login {
+    display: inline;
+    color: #c56666;
+    padding: 0.7rem 5%;
+    margin: 0 0 0 0;
+    margin-left: auto;
+    border: 1px solid #aaaaaa;
+    border-top: 0;
+    border-image: linear-gradient(75deg, #f1f1f1, #888888);
+    border-image-slice: 1;
+    font-family: Segoe UI;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    background: linear-gradient( 90deg, #303080, #303080 50%, transparent 50%, transparent) 100% 0 / 200% 100%;
+    transition: background-position 0.1s;
+}
+
+.header-button-login:hover {
     background-position: 0 0;
 }
