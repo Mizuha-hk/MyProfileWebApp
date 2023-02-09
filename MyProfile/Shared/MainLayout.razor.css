@@ -1,0 +1,100 @@
+.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #060606;
+    color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+.top-row {
+    background-color: #040312;
+    border-bottom: 3px solid #5de523;
+    border-image: linear-gradient(to right, red 0%, green 50%, blue 100%);
+    border-image-slice: 1;
+    justify-content: flex-start;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row ::deep a, .top-row ::deep .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+    .top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .top-row ::deep a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth) {
+        display: none;
+    }
+
+    .top-row.auth {
+        justify-content: space-between;
+    }
+
+    .top-row ::deep a, .top-row ::deep .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page {
+        flex-direction: row;
+    }
+
+    .top-row {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth ::deep a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row, article {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+.header-button {
+    display: inline;
+    padding: 0.9rem 5%;
+    margin: 0 0;
+    border: 1px solid #aaaaaa;
+    border-top: 0;
+    border-left: 0;
+    border-image: linear-gradient(75deg, #f1f1f1, #888888);
+    border-image-slice: 1;
+    cursor: pointer;
+    user-select: none;
+
+    background: linear-gradient(
+        90deg,
+        #303040,
+        #303040 50%,
+        transparent 50%,
+        transparent) 100% 0 / 200% 100%;
+    transition:background-position 0.1s;
+}
+
+.header-button:hover {
+    background-position: 0 0;
+}
