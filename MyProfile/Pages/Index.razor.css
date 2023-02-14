@@ -1,0 +1,12 @@
+﻿.PROFILE-ME {
+    font-family: 'Segoe UI Black';
+}
+
+.Welcome {
+    font-size: 90px;
+    margin-left: 1%;
+}
+
+.Picture {
+    filter: blur(2px);
+}

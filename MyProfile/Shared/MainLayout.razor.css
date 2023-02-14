@@ -76,7 +76,7 @@ main {
 
 .header-button {
     display: inline;
-    padding: 0.7rem 5%;
+    padding: 0.7rem 3%;
     margin: 0 0;
     border: 1px solid #aaaaaa;
     border-top: 0;
@@ -95,6 +95,8 @@ main {
         transparent 50%,
         transparent) 100% 0 / 200% 100%;
     transition:background-position 0.1s;
+    min-width: 75px;
+    max-width: 200px
 }
 
 .header-button:hover {
@@ -110,12 +112,13 @@ main {
     font-size: 25px;
     user-select: none;
     min-width: 170px;
+    max-width: 200px;
 }
 
 .header-button-login {
     display: inline;
     color: #c56666;
-    padding: 0.7rem 5%;
+    padding: 0.7rem 1%;
     margin: 0 0 0 0;
     margin-left: auto;
     border: 1px solid #aaaaaa;
@@ -128,6 +131,8 @@ main {
     user-select: none;
     background: linear-gradient( 90deg, #303080, #303080 50%, transparent 50%, transparent) 100% 0 / 200% 100%;
     transition: background-position 0.1s;
+    min-width: 125px;
+    max-width: 150px;
 }
 
 .header-button-login:hover {
